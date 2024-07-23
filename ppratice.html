@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      input {
+        background-color: blue;
+        color: aliceblue;
+        width: 70px;
+      }
+
+      #inans {
+        width: 210px;
+      }
+
+      #clear {
+        width: 220px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="calc">
+        <form name="form">    
+            <input type="text" name="answer" id="inans"><br><br>
+            <input type="button" value=" 1 " onclick="form.answer.value += '1'">
+            <input type="button" value=" 2 " onclick="form.answer.value += '2'">
+            <input type="button" value=" 3 " onclick="form.answer.value += '3'"><br><br>
+
+
+            <input type="button" value=" 4 " onclick="form.answer.value += '4'">
+            <input type="button" value=" 5 " onclick="form.answer.value += '5'">
+            <input type="button" value=" 6 " onclick="form.answer.value += '6'"><br><br>
+
+
+            <input type="button" value=" 7 " onclick="form.answer.value += '7'">
+            <input type="button" value=" 8 " onclick="form.answer.value += '8'">
+            <input type="button" value=" 9 " onclick="form.answer.value += '9'"><br><br>
+
+            <input type="button" value=" 0 " onclick="form.answer.value += '0'">
+            <input type="button" value=" + " onclick="form.answer.value += '+'">
+            <input type="button" value=" - " onclick="form.answer.value += '-'"><br><br>
+
+            <input type="button" value=" / " onclick="form.answer.value += '/'">
+            <input type="button" value=" * " onclick="form.answer.value += '*'">
+            <input type="button" value=" = " onclick="form.answer.value = eval(form.answer.value)"><br><br>
+
+            <input type="button" value=" Clear All " id="clear" onclick="form.answer.value = ' '">
+
+        </form>
+    </div>
+    <!-- <button id="clickBtn">Click Me</button>
+    <button id="container">Click Me</button> -->
+    <!-- <script src="jun10date.js"></script> -->
+</body>
+
+</html>
